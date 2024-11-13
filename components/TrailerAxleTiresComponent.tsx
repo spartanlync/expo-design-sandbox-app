@@ -1,20 +1,38 @@
 import * as React from "react"
 import { StyleSheet, Dimensions } from 'react-native';
 import { View } from '@/components/Themed';
-import Svg, { SvgProps, Defs, G, Path, Circle, Rect, Use } from "react-native-svg"
+import Svg, { SvgProps, G, Path, Circle, Rect, Use } from "react-native-svg"
 
-const TIRE_ALERT_OK = 1;
-const TIRE_ALERT_AMBER = 2;
-const TIRE_ALERT_RED = 3;
+// State Configuration ================================
+
+let axle1Tire1Alert: number = TIRE_ALERT_OK;
+let axle1Tire2Alert: number = TIRE_ALERT_OK;
+let axle2Tire1Alert: number = TIRE_ALERT_OK;
+let axle2Tire2Alert: number = TIRE_ALERT_OK;
+let axle3Tire1Alert: number = TIRE_ALERT_OK;
+let axle3Tire2Alert: number = TIRE_ALERT_OK;
+
+let doesAxle3Exist: boolean = true;
+
+// Component Initialization ==========================
 
 type TrailerAxleTiresComponentProps = SvgProps & {
   color?: string;
   width?: number;
   height?: number;
-  doesAxle3Exist?: boolean;
 };
 
 const SVGstyles = StyleSheet.create({
+  svgWrapper: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 5,
+    paddingBottom: 5,
+    backgroundColor: "transparent"
+  },
   frontBumperFill: {
     color: "#9d9fa2",
   },
@@ -72,36 +90,43 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
   color = "black",
   width = 319,
   height = 651,
-  doesAxle3Exist = false,
   ...props
 }) => {
+  // Calculate the maximum allowed size for the SVG based on 20% margins
+  const { width: windowWidth, height: windowHeight } = Dimensions.get('window');
 
-  let axle1Tire1Alert: number = TIRE_ALERT_AMBER;
-  let axle1Tire2Alert: number = TIRE_ALERT_AMBER;
-  let axle2Tire1Alert: number = TIRE_ALERT_AMBER;
-  let axle2Tire2Alert: number = TIRE_ALERT_AMBER;
-  let axle3Tire1Alert: number = TIRE_ALERT_AMBER;
-  let axle3Tire2Alert: number = TIRE_ALERT_AMBER;
+  // Calculate the maximum width and height for the SVG based on the margin ratio
+  const maxWidth = windowWidth * (1 - APP_COMPONENT_BG_MARGIN_RATIO);
+  const maxHeight = windowHeight * (1 - APP_COMPONENT_BG_MARGIN_RATIO);
 
-  const windowHeight = Dimensions.get("window").height;
-  const marginPercentage = 0.21; // 21% margin
+  // Set SVG width and height, maintaining its original aspect ratio
+  const svgOriginalWidth = width;  // Replace with actual SVG width
+  const svgOriginalHeight = height; // Replace with actual SVG height
+  const aspectRatio = svgOriginalWidth / svgOriginalHeight;
 
-  // Maintain the original aspect ratio
-  const originalWidth = width;
-  const originalHeight = height;
-  const aspectRatio = originalWidth / originalHeight;
+  let svgWidth, svgHeight;
+  if (maxWidth / aspectRatio <= maxHeight) {
+    // Width is the limiting factor
+    svgWidth = maxWidth;
+    svgHeight = maxWidth / aspectRatio;
+  }
+  else {
+    // Height is the limiting factor
+    svgHeight = maxHeight;
+    svgWidth = maxHeight * aspectRatio;
+  }
 
-  // Calculate the effective height by applying a 20% margin on the top and bottom
-  const effectiveHeight = windowHeight * (1 - 2 * marginPercentage);
-  const effectiveWidth = effectiveHeight * aspectRatio;
+  // Calculate translation values for centering
+  const translateX = -svgWidth / 2;
+  const translateY = -svgHeight / 2;
+
   return (
-  <View style={{ width: effectiveWidth, aspectRatio }}>
+  <View style={[SVGstyles.svgWrapper, { width: svgWidth, height: svgHeight, transform: [{ translateX }, { translateY }] }]}>
   <Svg
     id="TrailerView"
-    width="100%"
-    height="100%"
-    // Adjusted viewBox to match effective dimensions
-    viewBox={`0 0 ${originalWidth} ${originalHeight}`}
+    width={svgWidth}
+    height={svgHeight}
+    viewBox={`0 0 ${svgOriginalWidth} ${svgOriginalHeight}`}
     {...props}
     >
     <G

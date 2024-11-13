@@ -5,27 +5,31 @@ import TrailerAxleTiresComponent from '@/components/TrailerAxleTiresComponent';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      {/*
-      <Text
+      <TrailerAxleTiresComponent />
+
+      <View style={styles.pgContentContainer}>
+        <Text
           style={styles.defaultText}
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)">
-          Trailer SVG goes here
+
+          UI Instruction {"\n"} goes here
         </Text>
-
-        true / false
-
-        */}
-        <TrailerAxleTiresComponent doesAxle3Exist={true} />
+      </View>
     </View>
-  );
+);
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+  },
+  pgContentContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
   },
   title: {
     fontSize: 20,
@@ -40,5 +44,8 @@ const styles = StyleSheet.create({
     fontSize: 17,
     lineHeight: 24,
     textAlign: 'center',
+    backgroundColor: 'white',
+    padding: 5,
+    borderRadius: 10,
   },
 });
