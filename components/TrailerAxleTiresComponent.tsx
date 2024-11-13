@@ -46,7 +46,13 @@ const SVGstyles = StyleSheet.create({
     color: "#FBBD04",
   },
   tireAmberAlertIconFill: {
-    color: "#453302",
+    color: "#856503",
+  },
+  tireAmberAlertIconShadowFill: {
+    color: "#473601",
+  },
+  tireAmberAlertIconHighlightFill: {
+    color: "#FBBD04",
   },
   tireRedAlertStroke: {
     color: "#BD2727",
@@ -70,8 +76,8 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
   ...props
 }) => {
 
-  let axle1Tire1Alert: number = TIRE_ALERT_RED;
-  let axle1Tire2Alert: number = TIRE_ALERT_RED;
+  let axle1Tire1Alert: number = TIRE_ALERT_AMBER;
+  let axle1Tire2Alert: number = TIRE_ALERT_AMBER;
   let axle2Tire1Alert: number = TIRE_ALERT_AMBER;
   let axle2Tire2Alert: number = TIRE_ALERT_AMBER;
   let axle3Tire1Alert: number = TIRE_ALERT_AMBER;
@@ -109,7 +115,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path2"
         d="M129.46 7.751v-.25a3.46 3.46 0 0 0-3.46-3.48h-15.48a3.46 3.46 0 0 0-3.46 3.46v.25h-1.84v5.29h-15a1.61 1.61 0 0 0-1.61 1.61v4.64a1.61 1.61 0 0 0 1.61 1.61h15v5.29h1.84v.25a3.46 3.46 0 0 0 3.46 3.46H126a3.46 3.46 0 0 0 3.47-3.46v-.25h4.29V7.751Z"
@@ -117,7 +123,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frontBumperStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path4"
         d="M203.23 152.921a4.11 4.11 0 0 0 3.41-1.82l20.78-31a4.1 4.1 0 0 0 .69-2.28v-75.3a4.09 4.09 0 0 0-.61-2.15l-1.44-2.35v-20.33a4.1 4.1 0 0 0-8.2 0v21.51a4.09 4.09 0 0 0 .61 2.15l1.44 2.34v72.89l-20.08 30a4.1 4.1 0 0 0 1.12 5.69 4.06 4.06 0 0 0 2.28.65z"
@@ -125,7 +131,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path5"
         d="M190.07 7.751v-.25a3.46 3.46 0 0 1 3.46-3.48H209a3.46 3.46 0 0 1 3.46 3.46v.25h1.84v5.29h14.95a1.62 1.62 0 0 1 1.62 1.61v4.64a1.62 1.62 0 0 1-1.62 1.61h-14.94v5.29h-1.84v.25a3.46 3.46 0 0 1-3.47 3.48h-15.47a3.46 3.46 0 0 1-3.46-3.46v-.25h-4.3V7.751Z"
@@ -133,7 +139,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frontBumperStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="polygon6"
         d="M295.52 305.3H265.5v-2.41h-56.29v8.71h86.31z"
@@ -159,7 +165,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect8"
         d="M17.818 26.466h288.237v616.283H17.818Z"
@@ -167,7 +173,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-    />
+      />
       <Path
         id="rect13"
         d="M18.3 167.241h287.97v10.4H18.3Z"
@@ -207,7 +213,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect24"
         d="M204.797 36.984h17.715V640.88h-17.715z"
@@ -215,7 +221,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect25"
         d="M131.99.431h55.25v16.43h-55.25z"
@@ -231,7 +237,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect27"
         d="M114.31 101.951h90.62v8.22h-90.62z"
@@ -239,7 +245,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect28"
         d="M-101.951 120.35h52.71v8.22h-52.71z"
@@ -265,7 +271,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path30"
         d="M25.36 16.861a9.06 9.06 0 0 0-9.06 9.05v15.11h24.17v-24.16z"
@@ -273,7 +279,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path31"
         d="M306.28 25.911a9 9 0 0 0-9-9h-15.16v24.11h24.16z"
@@ -281,7 +287,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect34"
         d="M16.3 441.141h24.22v28.19H16.3Z"
@@ -297,7 +303,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect36"
         d="M280.05 441.141h24.22v28.19h-24.22z"
@@ -305,7 +311,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect37"
         d="M16.3 582.891h24.22v28.19H16.3Z"
@@ -321,7 +327,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect39"
         d="M280.05 582.891h24.22v28.19h-24.22z"
@@ -329,7 +335,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect43"
         d="M96.85 611.082h125.52v40.23H96.85Z"
@@ -337,7 +343,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path43"
         d="M4.92 627.351v7.67a16.26 16.26 0 0 0 16.26 16.27h276.87a16.27 16.27 0 0 0 16.27-16.27v-7.69z"
@@ -345,7 +351,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.frameSupportStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect44"
         d="M4.92 619.491h309.4v7.87H4.92Z"
@@ -361,7 +367,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path239"
         d="m192 384.531-8.88-4.27a4.38 4.38 0 0 0-1.88-.43h-46.46a4.31 4.31 0 0 0-1.87.43l-8.91 4.27a4.38 4.38 0 0 1-1.88.43H122a4.32 4.32 0 0 0-4.32 4.32v9.42a4.33 4.33 0 0 0 4.32 4.32h.15a4.37 4.37 0 0 1 1.88.42l8.88 4.28a4.3 4.3 0 0 0 1.87.42h46.49a4.37 4.37 0 0 0 1.88-.42l8.88-4.28a4.3 4.3 0 0 1 1.87-.42h.15a4.32 4.32 0 0 0 4.32-4.32v-9.42a4.31 4.31 0 0 0-4.32-4.32h-.15a4.31 4.31 0 0 1-1.9-.43z"
@@ -369,7 +375,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <G id="Axle2Tire1" transform="matrix(1.65111 0 0 1 0 -631.979)"
           {...(
             axle2Tire1Alert === TIRE_ALERT_AMBER || axle2Tire1Alert === TIRE_ALERT_RED
@@ -913,7 +919,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path434"
         d="M223.38 414.951h-15.47v-41.85h15.47a6.3 6.3 0 0 1 6.3 6.3v29.21a6.3 6.3 0 0 1-6.3 6.3z"
@@ -921,7 +927,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="rect238-9"
         d="M14.77 254.911h286.52v10.65H14.77Z"
@@ -929,7 +935,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-    />
+      />
       <Path
         id="path239-6"
         d="m192 250.781-8.88-4.27a4.38 4.38 0 0 0-1.88-.43h-46.46a4.31 4.31 0 0 0-1.87.43l-8.91 4.27a4.38 4.38 0 0 1-1.88.43H122a4.32 4.32 0 0 0-4.32 4.32v9.42a4.33 4.33 0 0 0 4.32 4.32h.15a4.37 4.37 0 0 1 1.88.42l8.88 4.28a4.3 4.3 0 0 0 1.87.42h46.49a4.37 4.37 0 0 0 1.88-.42l8.88-4.28a4.3 4.3 0 0 1 1.87-.42h.15a4.32 4.32 0 0 0 4.32-4.32v-9.42a4.31 4.31 0 0 0-4.32-4.32h-.15a4.31 4.31 0 0 1-1.9-.43z"
@@ -937,7 +943,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-    />
+      />
       <G id="Axle1Tire1" transform="matrix(1.65111 0 0 1 0 -631.979)"
           {...(
             axle1Tire1Alert === TIRE_ALERT_AMBER || axle1Tire1Alert === TIRE_ALERT_RED
@@ -1500,7 +1506,6 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
     </G>
 
     <G id="TrailerAxle12AlertIcons">
-
       {axle1Tire1Alert === TIRE_ALERT_RED && (
       <G
         id="AlertAxle1Tire1"
@@ -1782,18 +1787,42 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         />
       </G>
       )}
-
     </G>
+
     <G id="TrailerAxle12AmberIcons">
       {axle1Tire1Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle1Tire1"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 -9.615 213.372)"
+        transform="translate(-10.242 212.445) scale(.6474)"
       >
+        <Circle id="circle42" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle43" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
         <Path
-          id="path1-1"
-          d="M25.129 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.336.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.485.938-.304-2.391-1.851-3.868-4.171-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.476 1.454.797 0 1.524-.586 1.524-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          id="path44"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path46"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path95"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
+        <Path
+          id="path96"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path97"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
@@ -1801,12 +1830,36 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
       {axle1Tire2Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle1Tire2"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 248.385 213.372)"
+        transform="translate(247.758 212.445) scale(.6474)"
       >
+        <Circle id="circle37" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle38" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
         <Path
-          id="path21"
-          d="M25.129 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.336.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.485.938-.304-2.391-1.851-3.868-4.171-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.476 1.454.797 0 1.524-.586 1.524-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          id="path38"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path39"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path40"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
+        <Path
+          id="path41"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path42"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
@@ -1814,12 +1867,36 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
       {axle2Tire1Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle2Tire1"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 -9.615 345.372)"
+        transform="translate(-10.242 346.445) scale(.6474)"
       >
+        <Circle id="circle25" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle26" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
         <Path
-          id="path22"
-          d="M25.129 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.336.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.485.938-.304-2.391-1.851-3.868-4.171-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.476 1.454.797 0 1.524-.586 1.524-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          id="path26"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path27"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path28"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
+        <Path
+          id="path29"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path32"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
@@ -1827,12 +1904,36 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
       {axle2Tire2Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle2Tire2"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 248.385 345.372)"
+        transform="translate(247.758 346.445) scale(.6474)"
       >
+        <Circle id="circle32" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle33" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
         <Path
-          id="path23"
-          d="M25.129 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.336.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.485.938-.304-2.391-1.851-3.868-4.171-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.476 1.454.797 0 1.524-.586 1.524-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          id="path33"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path34"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path35"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
+        <Path
+          id="path36"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path37"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
@@ -1850,7 +1951,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path45"
         d="m192 515.501-8.88-4.27a4.38 4.38 0 0 0-1.88-.43h-46.46a4.31 4.31 0 0 0-1.87.43l-8.88 4.27a4.38 4.38 0 0 1-1.88.43H122a4.32 4.32 0 0 0-4.32 4.32v9.42a4.33 4.33 0 0 0 4.32 4.35h.15a4.24 4.24 0 0 1 1.88.43l8.88 4.27a4.3 4.3 0 0 0 1.87.42h46.49a4.37 4.37 0 0 0 1.88-.42l8.88-4.27a4.17 4.17 0 0 1 1.87-.43h.15a4.32 4.32 0 0 0 4.32-4.32v-9.42a4.31 4.31 0 0 0-4.32-4.32h-.15a4.31 4.31 0 0 1-1.9-.46z"
@@ -1858,7 +1959,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <G id="Axle3Tire1" transform="matrix(1.65113 0 0 1 0 -631.979)"
           {...(
             axle3Tire1Alert === TIRE_ALERT_AMBER || axle3Tire1Alert === TIRE_ALERT_RED
@@ -2402,7 +2503,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
       <Path
         id="path435"
         d="M223.38 545.901h-15.47v-41.85h15.47a6.3 6.3 0 0 1 6.3 6.3v29.26a6.3 6.3 0 0 1-6.3 6.29z"
@@ -2410,7 +2511,7 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
         stroke={SVGstyles.axleStroke.color}
         strokeWidth=".82px"
         strokeMiterlimit="10"
-        />
+      />
 
       {axle3Tire1Alert === TIRE_ALERT_RED && (
       <G
@@ -2557,12 +2658,36 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
       {axle3Tire1Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle3Tire1"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 -9.615 477.372)"
+        transform="translate(-10.242 476.883) scale(.6474)"
       >
+        <Circle id="circle3" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle4" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
+        <Path
+          id="path21"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path22"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path23"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
         <Path
           id="path24"
-          d="M25.129 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.336.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.485.938-.304-2.391-1.851-3.868-4.171-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.476 1.454.797 0 1.524-.586 1.524-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path25"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
@@ -2570,12 +2695,36 @@ const TrailerAxleTiresComponent: React.FC<TrailerAxleTiresComponentProps> = ({
       {axle3Tire2Alert === TIRE_ALERT_AMBER && (
       <G
         id="AmberAxle3Tire2"
-        fill={SVGstyles.tireAmberAlertIconFill.color}
-        transform="matrix(1.46988 0 0 1.37548 -9.615 477.372)"
+        transform="translate(247.758 476.883) scale(.6474)"
       >
+        <Circle id="circle1-5" cx={62.5} cy={112} r={12} fill={SVGstyles.tireAmberAlertIconShadowFill.color} />
+        <Circle id="circle2" cx={60.9} cy={112} r={10.3} fill={SVGstyles.tireAmberAlertIconFill.color} />
         <Path
-          id="path25"
-          d="M200.653 53.512c8.25 0 14.039-4.477 17.156-13.266l4.125-11.602c1.031-2.93.094-5.343-2.344-6.234-2.18-.797-4.335.14-5.367 2.555l-1.523 3.75c-.047.094-.117.164-.211.164-.117 0-.164-.094-.164-.211V9.871c0-2.742-1.711-4.453-4.336-4.453-.961 0-1.828.328-2.484.938-.305-2.391-1.852-3.868-4.172-3.868-2.274 0-3.868 1.524-4.22 3.82-.585-.585-1.429-.89-2.273-.89-2.437 0-4.054 1.688-4.054 4.29v2.6c-.633-.656-1.57-1.007-2.578-1.007-2.438 0-4.125 1.805-4.125 4.43v20.132c0 10.969 6.656 17.649 16.57 17.649zm-.117-3.258c-8.297 0-13.36-5.32-13.36-14.766v-19.43c0-.984.633-1.687 1.618-1.687.96 0 1.664.703 1.664 1.688v11.976c0 .867.703 1.453 1.453 1.453.797 0 1.523-.586 1.523-1.453V10.13c0-1.008.633-1.688 1.594-1.688.984 0 1.664.68 1.664 1.688v16.71c0 .868.703 1.454 1.477 1.454.796 0 1.523-.586 1.523-1.453V7.223c0-.985.656-1.711 1.64-1.711.938 0 1.618.726 1.618 1.71V26.84c0 .82.656 1.453 1.476 1.453.797 0 1.5-.633 1.5-1.453V10.129c0-1.008.68-1.688 1.641-1.688.984 0 1.64.68 1.64 1.688V33.19c0 1.078.68 1.852 1.665 1.852.843 0 1.547-.375 2.086-1.547l3.187-7.125c.422-1.008 1.266-1.523 2.133-1.195.937.375 1.266 1.265.82 2.484l-4.148 11.578c-2.86 7.992-7.875 11.016-14.414 11.016z"
+          id="path2-6"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M55.1 108.4c1.2-1.8 3.8-3.3 6.5-3.7.7-.1 1.3-.1 1.9.1.4.2.8.6.5 1-.2.4-.7.5-1.1.6-2.5.7-4.8 2.4-6.2 4.4-.5.8-1.4 2.9-2.4 2.4-1-.7-.8-2.6.8-4.8z"
+          opacity={0.2}
+        />
+        <Path
+          id="path3-5"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M46.1 24.3c-2.1 2-3.4 4.4-4 7.4-.3 1.9-2 3.2-3.9 3.2h6.9c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.1-1.9 4.7-3.1 7.8-3.6-1.1-.2-2.3-.3-3.5-.3-4.6.1-8.3 1.4-11.2 3.9z"
+        />
+        <Path
+          id="path4-3"
+          fill={SVGstyles.tireAmberAlertIconShadowFill.color}
+          d="M89.5 12.2C83.4 6.7 75 4 64.2 4c-1.2 0-2.3 0-3.4.1 9.1.5 16.4 3.2 21.8 8.1 6.1 5.5 9.1 13.2 9.1 23 0 8.8-4.1 17.4-12.2 25.9l-9.8 9.6-.3.3c-2.9 3.4-4.6 8-5.2 13.9-.2 2-1.9 3.6-4 3.6h6.9c2 0 3.8-1.6 4-3.6.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9-.1-9.8-3.1-17.5-9.1-23Z"
+        />
+        <Path
+          id="path5-2"
+          fill={SVGstyles.tireAmberAlertIconFill.color}
+          d="M64.2 85c.5-5.9 2.3-10.5 5.2-13.9l.3-.3 9.8-9.6c8.2-8.5 12.2-17.1 12.2-25.9 0-9.8-3-17.5-9.1-23C77.2 7.4 70 4.7 60.8 4.2c-8.9.5-16.2 3.3-21.9 8.2-5.3 4.6-8.5 10.6-9.4 18.1-.3 2.4 1.6 4.4 4 4.4h4.8c1.9 0 3.6-1.3 3.9-3.2.5-3 1.9-5.4 4-7.4 2.8-2.6 6.6-3.9 11.2-3.9 1.2 0 2.4.1 3.5.3 1.1-.2 2.2-.3 3.4-.3 4.8 0 8.5 1.3 11 4s3.8 6.5 3.8 11.5c0 3.8-1.1 7.4-3.2 10.6-1.4 2.2-4.7 5.8-10 10.9-5.2 5.1-8.8 9.8-10.5 14-1.4 3.4-2.3 7.7-2.5 12.9-.1 2.3 1.7 4.2 4 4.2h3.5c1.8.1 3.6-1.5 3.8-3.5Z"
+        />
+        <Path
+          id="path6-3"
+          fill={SVGstyles.tireAmberAlertIconHighlightFill.color}
+          d="M39.6 15.9C43 11.7 49.5 8.7 56 8.3c1.6-.1 3.2 0 4.5.7 1 .5 1.7 1.6 1 2.6-.6.8-1.8 1.1-2.8 1.3-6.1 1.2-12 4.7-15.9 9.3-1.5 1.8-4 6.8-6.2 5.2-2.3-1.9-1.2-6.4 3-11.5z"
+          opacity={0.2}
         />
       </G>
       )}
