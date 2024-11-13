@@ -1,15 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Modal</Text>
+      <Text style={styles.title}>Tire Status Details</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/modal.tsx" />
+      <Text
+          style={styles.defaultText}
+          lightColor="rgba(0,0,0,0.8)"
+          darkColor="rgba(255,255,255,0.8)">
+          This is the popup page {"\n"}
+          (For Tire Status/Alert Details)
+        </Text>
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
@@ -32,4 +36,9 @@ const styles = StyleSheet.create({
     height: 1,
     width: '80%',
   },
+  defaultText: {
+    fontSize: 17,
+    lineHeight: 24,
+    textAlign: 'center',
+  },    
 });
