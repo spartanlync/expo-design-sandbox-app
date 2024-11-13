@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Text, View } from '@/components/Themed';
-import TrailerAxleTiresComponent from '@/components/TrailerAxleTiresComponent';
+import TrailerAxleTiresComponent from '@/components/UI-TrailerAxleTiresComponent';
 
 export default function TabOneScreen() {
   return (

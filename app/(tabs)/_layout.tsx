@@ -7,7 +7,7 @@ import { Pressable } from 'react-native';
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
-import TPMSIcon from '../../components/TPMSIcon';
+import TPMSIcon from '../../components/UI-TPMSIcon';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
